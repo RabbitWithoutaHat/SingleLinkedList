@@ -60,7 +60,7 @@ export default class SingleLinkedList<T extends Object> implements IList<T> {
       currentNode = currentNode.next;
     }
   }
-  public findValue(value: T): any {
+  public findValue(value: T): Node {
     let currentNode = this.head;
     while (currentNode !== null) {
       if (currentNode.value === value) {
